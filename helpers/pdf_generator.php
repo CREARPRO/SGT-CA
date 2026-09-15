@@ -5,7 +5,7 @@
  *
  * Reglas de diseño (obligatorias para InfinityFree):
  * - JAMÁS se escribe el PDF resultante en el disco del servidor.
- * - El binario se transmite directamente al navegador vía stream ('I')
+ * - El binario se transmite directamente al navegador via stream ('I')
  *   con los headers HTTP Content-Type: application/pdf.
  * - Sólo se lee la imagen base de la plantilla (ya almacenada previamente
  *   por el administrador) para usarla como fondo del documento.

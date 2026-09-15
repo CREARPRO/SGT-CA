@@ -101,10 +101,10 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 -- ----------------------------------------------------------------------------
 -- Datos semilla (opcional) - Usuario administrador por defecto
--- Contraseña: Admin123!  (cambiar inmediatamente después de la instalación)
--- Hash generado con password_hash('Admin123!', PASSWORD_DEFAULT)
+-- Contraseña: *******  (cambiar inmediatamente después de la instalación)
+-- Hash generado con password_hash('*******', PASSWORD_DEFAULT)
 -- ----------------------------------------------------------------------------
 INSERT INTO `usuarios` (`nombre_completo`, `correo`, `matricula`, `password_hash`, `rol`)
-VALUES ('Administrador General', 'admin@sgtca.local', 'ADMIN-001',
+VALUES ('Administrador General', 'ad@sgtca.local', 'ADMIN-001',
 '$2y$10$WwwxSjupW..FvwKYzOY5oO8VOATTnMEPv/F8AaGgWZhcccJMneN/y', 'admin')
 ON DUPLICATE KEY UPDATE correo=correo;

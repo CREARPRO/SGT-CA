@@ -23,7 +23,7 @@ document.addEventListener('click', (e) => {
 
 /* ---------------------------------------------------------------------
  * Validación de correo Gmail personal (registro)
- * Refuerza en cliente la regla de negocio validada también en el backend.
+ * Refuerza en cliente la regla de negocio validada tambien en el backend.
  * ------------------------------------------------------------------- */
 function validarCorreoGmail(input) {
   const regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
@@ -43,7 +43,7 @@ function validarCorreoGmail(input) {
 
 /* ---------------------------------------------------------------------
  * Validación de peso/formato de imágenes (flyers, plantillas, etc.)
- * Límite acordado para InfinityFree: 2MB, formatos JPG/PNG/WEBP.
+ * Límitado en InfinityFree: 2MB, formatos JPG/PNG/WEBP.
  * ------------------------------------------------------------------- */
 function validarImagen(input, maxMB = 2) {
   const mensajeEl = document.getElementById('mensaje-' + input.id);

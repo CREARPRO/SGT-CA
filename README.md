@@ -1,13 +1,10 @@
-# SGT-CA · Sistema de Gestión de Talleres con Certificación Automatizada
+# SGT-CA · Sistema Integrado de Gestión de Talleres y Certificación Automatizada SeGunTu
 
 Sistema completo desarrollado en **PHP estructurado + MySQL/MariaDB + HTML5/CSS3/JavaScript Vanilla**,
-optimizado para desplegarse en hosting compartido gratuito (InfinityFree), tal como se especifica
-en la propuesta técnica original.
+optimizado para desplegarse en hosting compartido gratuito (InfinityFree).
 
 ## Estado del proyecto
-
-Todo el código descrito en la propuesta fue implementado y **probado de extremo a extremo** en un
-entorno local con Apache/PHP 8.3 + MariaDB antes de la entrega:
+**probado de extremo a extremo**
 
 - ✅ Registro y login con validación estricta de Gmail personal (no institucional).
 - ✅ Panel de Administrador: validación de propuestas, monitor de inscritos en tiempo real, generador
@@ -27,7 +24,7 @@ entorno local con Apache/PHP 8.3 + MariaDB antes de la entrega:
 
 ## Estructura del proyecto
 
-Respeta exactamente la jerarquía definida en la propuesta:
+Jerarquía definida en la propuesta:
 
 ```
 /
@@ -63,8 +60,8 @@ Respeta exactamente la jerarquía definida en la propuesta:
 4. **Primer acceso**
    - Visita `https://tudominio.infinityfreeapp.com/`.
    - Usuario administrador semilla:
-     - Correo: `admin@sgtca.local`
-     - Contraseña: `Admin123!`
+     - Correo: `ad@sgtca.local`
+     - Contraseña: `*****`
    - **Cambia esta contraseña de inmediato** (créate un nuevo admin y desactiva/edita el semilla
      directamente en phpMyAdmin, ya que el sistema no incluye edición de usuarios desde la UI en
      esta primera versión).
@@ -97,6 +94,5 @@ como alumno o tallerista; el rol `admin` sólo existe mediante el registro semil
 manual en la base de datos (`UPDATE usuarios SET rol='admin' WHERE correo='...'`).
 
 ## Créditos
-
-Desarrollado siguiendo al pie de la letra el documento *"Propuesta Técnica y Arquitectónica —
-Sistema Integrado de Gestión de Talleres y Certificación Automatizada (SGT-CA)"*.
+Gaspar Gijon
+Sistema Integrado de Gestión de Talleres y Certificación Automatizada (SGT-CA) SeGunTu"*.

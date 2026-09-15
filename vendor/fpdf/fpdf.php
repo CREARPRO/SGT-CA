@@ -6,7 +6,7 @@
 * Date:    2026-05-31                                                          *
 * Author:  Olivier Plathey                                                     *
 *******************************************************************************/
-
+//librerias
 class FPDF
 {
 const VERSION = '1.9';

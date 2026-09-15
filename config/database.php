@@ -9,10 +9,10 @@
 // ---------------------------------------------------------------------------
 // CREDENCIALES DE CONEXIÓN (editar antes de subir a producción)
 // ---------------------------------------------------------------------------
-define('DB_HOST', 'sql110.infinityfree.com');   // Host MySQL de InfinityFree
-define('DB_NAME', 'if0_42382194_base_de_datos_sgt');        // Nombre de la base de datos
-define('DB_USER', 'if0_42382194');              // Usuario MySQL
-define('DB_PASS', 'GeMkgjvTuYbsgB');          // Password MySQL
+define('DB_HOST', '*******************');   // Host MySQL de InfinityFree
+define('DB_NAME', '*****************');        // Nombre de la base de datos
+define('DB_USER', '****************');              // Usuario MySQL
+define('DB_PASS', '***************');          // Password MySQL
 
 /**
  * Devuelve una instancia PDO reutilizable (patrón singleton simple).
