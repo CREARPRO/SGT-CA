@@ -1,4 +1,4 @@
-# SGT-CA · Sistema Integrado de Gestión de Talleres y Certificación Automatizada SeGunTu
+# SGT-CA · Sistema de Gestión de Talleres y Certificación Automatizada SeGunTu
 
 Sistema completo desarrollado en **PHP estructurado + MySQL/MariaDB + HTML5/CSS3/JavaScript Vanilla**,
 optimizado para desplegarse en hosting compartido gratuito (InfinityFree).
@@ -95,4 +95,5 @@ manual en la base de datos (`UPDATE usuarios SET rol='admin' WHERE correo='...'`
 
 ## Créditos
 Gaspar Gijon
+
 Sistema Integrado de Gestión de Talleres y Certificación Automatizada (SGT-CA) SeGunTu"*.
