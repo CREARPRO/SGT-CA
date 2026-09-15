@@ -1,4 +1,4 @@
-# SGT-CA · Sistema Integrado de Gestión de Talleres y Certificación Automatizada
+# SGT-CA · Sistema de Gestión de Talleres con Certificación Automatizada
 
 Sistema completo desarrollado en **PHP estructurado + MySQL/MariaDB + HTML5/CSS3/JavaScript Vanilla**,
 optimizado para desplegarse en hosting compartido gratuito (InfinityFree), tal como se especifica
