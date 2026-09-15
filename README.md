@@ -96,4 +96,4 @@ manual en la base de datos (`UPDATE usuarios SET rol='admin' WHERE correo='...'`
 ## Créditos
 Gaspar Gijon
 
-Sistema Integrado de Gestión de Talleres y Certificación Automatizada (SGT-CA) SeGunTu"*.
+Sistema Integrado de Gestión de Talleres y Certificación Automatizada (SGT-CA) SeGunTu.
