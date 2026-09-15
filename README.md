@@ -1,4 +1,5 @@
 # SGT-CA · Sistema de Gestión de Talleres y Certificación Automatizada SeGunTu
+<img width="1906" height="880" alt="image" src="https://github.com/user-attachments/assets/7daac401-8b20-4305-9176-f47253afbb94" />
 
 Sistema completo desarrollado en **PHP estructurado + MySQL/MariaDB + HTML5/CSS3/JavaScript Vanilla**,
 optimizado para desplegarse en hosting compartido gratuito (InfinityFree).
