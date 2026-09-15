@@ -1,0 +1,159 @@
+/* ==========================================================================
+   SGT-CA · Hoja de estilos global
+   ========================================================================== */
+:root {
+  --color-primario: #1d4ed8;
+  --color-primario-oscuro: #1e3a8a;
+  --color-exito: #16a34a;
+  --color-peligro: #dc2626;
+  --color-advertencia: #d97706;
+  --color-fondo: #f3f4f6;
+  --color-tarjeta: #ffffff;
+  --color-texto: #1f2937;
+  --color-borde: #e5e7eb;
+  --radio: 10px;
+  --sombra: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+a { color: var(--color-primario); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--color-primario-oscuro);
+  color: #fff;
+  padding: 12px 20px;
+}
+.navbar-marca a { color: #fff; font-weight: 700; font-size: 1.25rem; }
+.navbar-links { display: flex; flex-wrap: wrap; gap: 14px; }
+.navbar-links a { color: #dbeafe; font-size: .92rem; }
+.navbar-links a:hover { color: #fff; }
+.navbar-usuario { display: flex; align-items: center; gap: 10px; font-size: .85rem; color: #dbeafe; }
+.btn-salir { background: var(--color-peligro); color: #fff !important; padding: 5px 12px; border-radius: 6px; }
+
+/* ---------------- Layout ---------------- */
+.contenedor { max-width: 1150px; margin: 0 auto; padding: 24px 16px 60px; }
+.footer { text-align: center; padding: 18px; color: #6b7280; font-size: .8rem; }
+
+h1 { font-size: 1.6rem; margin-bottom: .4rem; }
+h2 { font-size: 1.25rem; margin-top: 1.6rem; }
+.subtitulo { color: #6b7280; margin-bottom: 1.5rem; }
+
+/* ---------------- Tarjetas / Grid de talleres ---------------- */
+.grid-talleres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+.tarjeta-taller {
+  background: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .15s ease;
+}
+.tarjeta-taller:hover { transform: translateY(-3px); }
+.tarjeta-taller img { width: 100%; height: 150px; object-fit: cover; background: #e5e7eb; }
+.tarjeta-taller-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.tarjeta-taller-body h3 { margin: 0; font-size: 1.05rem; }
+.badge { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: .72rem; font-weight: 600; }
+.badge-gratis { background: #dcfce7; color: #166534; }
+.badge-pago { background: #fef3c7; color: #92400e; }
+.cupo-disponible { color: var(--color-exito); font-weight: 600; }
+.cupo-lleno { color: var(--color-peligro); font-weight: 600; }
+
+/* ---------------- Formularios ---------------- */
+.tarjeta-form {
+  background: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 24px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.campo { margin-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+.campo label { font-weight: 600; font-size: .9rem; }
+.campo input, .campo select, .campo textarea {
+  padding: 9px 12px;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  font-size: .95rem;
+  font-family: inherit;
+}
+.campo textarea { resize: vertical; min-height: 80px; }
+.campo small { color: #6b7280; }
+.fila-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 640px) { .fila-2 { grid-template-columns: 1fr; } }
+
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 7px;
+  font-size: .92rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primario);
+}
+.btn:hover { background: var(--color-primario-oscuro); }
+.btn-exito { background: var(--color-exito); }
+.btn-peligro { background: var(--color-peligro); }
+.btn-advertencia { background: var(--color-advertencia); }
+.btn-secundario { background: #6b7280; }
+.btn:disabled { background: #9ca3af; cursor: not-allowed; }
+
+/* ---------------- Tablas ---------------- */
+table.tabla { width: 100%; border-collapse: collapse; background: var(--color-tarjeta); border-radius: var(--radio); overflow: hidden; box-shadow: var(--sombra); }
+table.tabla th, table.tabla td { padding: 10px 12px; border-bottom: 1px solid var(--color-borde); text-align: left; font-size: .88rem; }
+table.tabla th { background: #f9fafb; font-weight: 700; }
+table.tabla tbody tr:hover { background: #f9fafb; }
+.tabla-wrap { overflow-x: auto; }
+
+/* ---------------- Alertas ---------------- */
+.alerta { padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; font-size: .9rem; }
+.alerta-exito { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.alerta-error { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+.alerta-info { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+
+/* ---------------- Modal ---------------- */
+.overlay-modal {
+  position: fixed; inset: 0; background: rgba(0,0,0,.5);
+  display: none; align-items: center; justify-content: center; z-index: 999; padding: 16px;
+}
+.overlay-modal.activo { display: flex; }
+.caja-modal {
+  background: #fff; border-radius: var(--radio); padding: 24px; max-width: 480px; width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.caja-modal h3 { margin-top: 0; }
+.cerrar-modal { float: right; cursor: pointer; font-size: 1.2rem; background: none; border: none; }
+
+/* ---------------- Utilidades ---------------- */
+.flex-entre { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.text-centro { text-align: center; }
+.mt-1 { margin-top: 8px; } .mt-2 { margin-top: 16px; } .mt-3 { margin-top: 24px; }
+.enlace-whatsapp {
+  background: #16a34a; color: #fff !important; padding: 8px 14px; border-radius: 6px;
+  display: inline-block; font-weight: 600; font-size: .85rem;
+}
